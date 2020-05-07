@@ -2,7 +2,7 @@
 
 namespace ConsoleApp_Test
 {
-    class Program
+    class Start
     {
         static void Main(string[] args)
         {
