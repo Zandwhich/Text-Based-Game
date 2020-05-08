@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ * Author: Alex Zdanowicz
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -31,7 +35,7 @@ namespace ConsoleApp_Test
         /* Methods */
 
         // Returns the amount of spaces in the inventory
-        public int GetSpaces()
+        public int GetNumSpaces()
         {
             return this.numSpaces;
         }//end GetSpaces()

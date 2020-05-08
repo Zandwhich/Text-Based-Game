@@ -1,5 +1,10 @@
-﻿using System;
+﻿/*
+ * Author: Alex Zdanowicz
+ */
+
+using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata;
 using System.Text;
 
 namespace ConsoleApp_Test
@@ -39,5 +44,9 @@ namespace ConsoleApp_Test
         {
             return this.name.Equals(obj.GetName()) && this.value == obj.GetValue();
         }//end Equals()
+
+        // The generic 'Use' method for the object
+        // The object that is passed in is the item that the item is "used on"
+        abstract public void Use(object obj);
     }//end Object
 }//end ConsoleApp_Test

@@ -1,57 +1,33 @@
-﻿using System;
+﻿/*
+ * Author: Alex Zdanowicz
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ConsoleApp_Test
 {
     // The class that defines the player
-    class Player
+    class Player : Person
     {
         // The default number of spaces for the inventory
         public static readonly int NUM_INVENTORY_SPACES = 10;
 
-        // The name of the player
-        private string name;
+        // The maximum amount of health for the player
+        public static readonly double HEALTH_MAX = 100;
 
-        // The health of the player
-        private double health;
+        // The minimum amount of health for the player
+        public static readonly double HEALTH_MIN = 0;
 
-        // The inventory of the player
-        private Inventory inventory;
+        // The maximum amount of hunger for the player
+        public static readonly double HUNGER_MAX = 100;
+
+        // The minimum amount of hunger for the player
+        public static readonly double HUNGER_MIN = 100;
 
 
         // The constructor of the player
-        public Player(string name)
-        {
-            this.name = name;
-            this.health = 100;
-            this.inventory = new Inventory(Player.NUM_INVENTORY_SPACES);
-        }//end Player()
-        
-
-        // Returns the name of the player
-        public string GetName()
-        {
-            return this.name;
-        }//end GetName()
-
-        // Returns the health of the player
-        public double GetHealth()
-        {
-            return this.health;
-        }//end GetHealth()
-
-        // Returns the inventory of the player
-        public Inventory GetInventory()
-        {
-            return this.inventory;
-        }//end GetInventory()
-
-        // Returns if the player is dead or not
-        public bool IsDead()
-        {
-            if (this.health <= 0) return true;
-            return false;
-        }//end IsDead()
+        public Player(string name) : base(name, HEALTH_MAX, HEALTH_MAX, HEALTH_MIN, HUNGER_MAX, HUNGER_MAX, HUNGER_MIN, NUM_INVENTORY_SPACES) { }
     }//end Player
 }//end ConsoleApp_Test
