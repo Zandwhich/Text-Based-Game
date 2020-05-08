@@ -16,12 +16,15 @@ namespace ConsoleApp_Test
         // The name of water
         public static readonly string NAME = "water";
 
+        
+        
         /* Constructors */
 
         public Water(double value) : base(Water.NAME) { }
 
-        /* Methods */
 
+
+        /* Methods */
 
         // Helps get rid of thirst for people
         public override void Use(object obj)
