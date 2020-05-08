@@ -23,9 +23,10 @@ namespace ConsoleApp_Test
         /* Methods */
 
 
+        // Helps get rid of thirst for people
         public override void Use(object obj)
         {
             throw new NotImplementedException();
-        }
+        }//end Use()
     }//end Water
 }//end ConsoleApp_Test
