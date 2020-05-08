@@ -11,6 +11,9 @@ namespace ConsoleApp_Test
         // The name of the object
         private string name;
 
+        // The value of the object
+        private double value;
+
 
         // The constructor for the object
         public Object(string name)
@@ -24,5 +27,11 @@ namespace ConsoleApp_Test
         {
             return this.name;
         }//end GetName()
+
+        // Returns the value of the object
+        public double GetValue()
+        {
+            return this.value;
+        }//end GetValue()
     }//end Object
 }//end ConsoleApp_Test
