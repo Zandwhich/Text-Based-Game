@@ -33,5 +33,11 @@ namespace ConsoleApp_Test
         {
             return this.value;
         }//end GetValue()
+
+        // Checks to see if this Object and another Objects have variables with the same values
+        public bool Equals(Object obj)
+        {
+            return this.name.Equals(obj.GetName()) && this.value == obj.GetValue();
+        }//end Equals()
     }//end Object
 }//end ConsoleApp_Test
